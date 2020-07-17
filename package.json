@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "",
+  "author": "Alex Kynoch & Dan Thomas",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.10.4",

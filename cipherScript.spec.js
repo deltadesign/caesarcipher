@@ -1,0 +1,2 @@
+import {encryptInput} from "./cipherScript"
+
