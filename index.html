@@ -8,21 +8,22 @@
 </head>
   <body>
     <div id="container">
-      <br/>
+
       <h2><u>Super Secret Message Service</u></h2>
       <br/>
       <textarea class="textbox" id ="userInput" rows ="3" cols = "50" placeholder="your message"></textarea>
       <br/>
+      <label for="num">Key</label>
       <input type="number" class ="textbox" id = "num">
       <br/>
-      <input type="button" class ="btn" onclick ="encode()" value="eNCoDe">
+      <input type="button" class ="btn" onclick ="encode()" value="Encrypt">
       <br/>
-      <input type="button" class ="btn" onclick ="decode()" value="dECoDe">
+      <input type="button" class ="btn" onclick ="decode()" value="Decrypt">
       <br/> <br/>
       
       <div id="result"></div>
       </div>
-    
+
   <script src="cipherScript.js" type = "text/Javascript"></script>
   </body>
 </html>
