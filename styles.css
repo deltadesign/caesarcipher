@@ -3,11 +3,14 @@
   font-family: cambria;
 }
 
+
+
 .btn
 {
   border-radius: 7px;
   background-color: dodgerblue;
   color : white;
+  width: 150px
 }
 
 .btn:hover 
@@ -19,11 +22,12 @@
 
 .textbox{
   display: flex;
+  flex-wrap: wrap;
   border-radius: 7px;
   text-align: center;
-  width: 45%;
-  min-height: 50px;
- 
+  width: 80%;
+  opacity: 80%;
+   
 }
 
 .keybox{
@@ -39,10 +43,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('https://www.magazineindependente.com/wp-content/uploads/2016/12/Top-secret-background.jpg') no-repeat center center;
+  background: url('images/Top-secret-background.jpg') no-repeat center center;
   background-size: cover;
   width: 100%;
   min-height: 980px;
  
 }
 
+main
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+
+}
