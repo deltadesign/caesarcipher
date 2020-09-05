@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel ="stylesheet" type="text/css" href="styles.css">
-  <title>EnCoDeR</title>
+  <title>SSMS</title>
 </head>
   <body>
     <div id="container">
 
       <h2><u>Super Secret Message Service</u></h2>
       <br/>
-      <textarea class="textbox" id ="userInput" rows ="3" cols = "50" placeholder="your message"></textarea>
+      <input type="text" class="textbox" id ="userInput"  placeholder="your message"></input>
       <br/>
       <label for="num">Key</label>
-      <input type="number" class ="textbox" id = "num">
+      <input type="number" class ="keybox" id = "num">
       <br/>
       <input type="button" class ="btn" onclick ="encode()" value="Encrypt">
       <br/>
