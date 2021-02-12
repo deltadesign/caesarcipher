@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   background: url(./images/Top-secret-background\ -\ Copy.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: none;
 }
@@ -55,7 +56,8 @@ body {
   padding: 1em 0.5em;
   text-align: center;
   font-family: monospace;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  border: none;
 }
 
 .key-wrapper {
@@ -76,6 +78,7 @@ body {
   margin-left: 1.2em;
 }
 
+
 #container {
   width: 75%;
   height: 100vh;
@@ -92,7 +95,7 @@ body {
 
 #result {
   font-family: monospace;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: center;
   display: inline;
   min-width: 60%;

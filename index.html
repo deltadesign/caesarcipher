@@ -9,23 +9,21 @@
 </head>
 
 <body>
-    <div id="container">
-      <h1 id="title">Super Secret Message Service</h1>
-      <textarea class="textbox" id="userInput" placeholder="your message"></textarea>
-      <div class="key-wrapper">
+  <div id="container">
+    <h1 id="title">Super Secret Message Service</h1>
+    <textarea class="textbox" id="userInput" placeholder="your message"></textarea>
+    <div class="key-wrapper">
       <label for="num">Key:</label>
       <input type="number" class="keybox" id="num">
-      </div>
-      <div class="btn-wrapper">
+    </div>
+    <div class="btn-wrapper">
       <input type="button" class="btn" onclick="encode()" value="Encrypt">
       <input type="button" class="btn" onclick="decode()" value="Decrypt">
     </div>
-    <!-- <img src="./images/loading.gif" alt="a loading wheel" class="loading"> -->
     <div id="result"></div>
     <input type="button" class="btn" onclick="reset()" value="Reset">
-    </div>
-
-    <!-- SCRIPT TAGS -->
+  </div>
+  <!-- SCRIPT TAGS -->
   <script src="cipherScript.js" type="text/Javascript"></script>
 </body>
 
