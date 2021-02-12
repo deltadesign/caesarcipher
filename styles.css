@@ -1,64 +1,115 @@
-*
-{
-  font-family: cambria;
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*font-family: 'Bebas Neue', cursive;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.btn
-{
-  border-radius: 7px;
+body {
+  display: flex;
+  justify-content: center;
+  background: url(./images/Top-secret-background\ -\ Copy.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+
+.btn {
+  width: 75px;
+  height: 75px;
+  margin: 0 1.2em;
+  border-radius: 50%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.2em;
   background-color: dodgerblue;
   color : white;
-  width: 150px
+  transition: 0.4s;
 }
 
-.btn:hover 
-{
+.btn:hover {
   cursor: pointer;
   color: dodgerblue;
   background-color: white;
 }
 
-.textbox{
-  display: flex;
-  flex-wrap: wrap;
-  border-radius: 7px;
-  text-align: center;
-  width: 80%;
-  opacity: 80%;
-   
+.btn:active {
+  transform: scale(0.95);
 }
 
-.keybox{
-  display: flex;
-  border-radius: 7px;
-  text-align: center;
-  width: 10%;
+.btn:focus {
+  outline: none;  
 }
 
-#container
-{
+.textbox {
+  min-width: 60%;
+  max-width: 80%;
+  min-height: 100px;
+  margin-top: 1.5em;
+  padding: 1em 0.5em;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+.key-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.2em;
+}
+
+.keybox {
+  display: flex;
+  font-size: 1em;
+  font-family: 'Bebas Neue', cursive;
+  border-radius: 7px;
+  text-align: center;
+  width: 10ch;
+  margin-left: 1.2em;
+}
+
+#container {
+  width: 75%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  background: url('images/Top-secret-background.jpg') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  min-height: 980px;
- 
 }
 
-#title 
-{
+#title {
   text-decoration: underline;
-  
+  font-family: 'Bebas Neue', cursive;
+  margin-top: 1em;
 }
 
-main
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 90%;
+#result {
+  font-family: monospace;
+  font-size: 1.2em;
+  text-align: center;
+  display: inline;
+  min-width: 60%;
+  min-height: 100px;
+  margin: 1.5em 0;
+  padding: 1em 0.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
+@media (max-width: 768px) {
+  #container {
+    width: 95%;
+  }
+  .textbox {
+    min-width: 95%;
+  }
+  #result {
+    min-width: 95%;
+  }
 }

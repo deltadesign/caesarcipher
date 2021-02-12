@@ -51,3 +51,9 @@ const decode = () => {
 document.getElementById("result").innerHTML = resultArray.join('');
 
 }
+
+const reset = () => {
+  document.getElementById("userInput").value = "";
+  document.getElementById("num").value = "";
+  document.getElementById("result").innerHTML = "";
+}

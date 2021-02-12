@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel ="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <title>SSMS</title>
 </head>
-  <body>
-    <div id="container">
-      <main>
-      <h1 id="title">Super Secret Message Service</h1>
-      <br/>
-      <textarea class="textbox" id ="userInput" rows="8" placeholder="your message"></textarea>
-      <br/>
-      <label for="num">Key</label>
-      <input type="number" class ="keybox" id = "num">
-      <br/>
-      <input type="button" class ="btn" onclick ="encode()" value="Encrypt">
-      <br/>
-      <input type="button" class ="btn" onclick ="decode()" value="Decrypt">
-      <br/> <br/>
-      
-      <div id="result"></div>
-      </main>
-      </div>
 
-  <script src="cipherScript.js" type = "text/Javascript"></script>
-  </body>
+<body>
+    <div id="container">
+      <h1 id="title">Super Secret Message Service</h1>
+      <textarea class="textbox" id="userInput" placeholder="your message"></textarea>
+      <div class="key-wrapper">
+      <label for="num">Key:</label>
+      <input type="number" class="keybox" id="num">
+      </div>
+      <div class="btn-wrapper">
+      <input type="button" class="btn" onclick="encode()" value="Encrypt">
+      <input type="button" class="btn" onclick="decode()" value="Decrypt">
+    </div>
+    <!-- <img src="./images/loading.gif" alt="a loading wheel" class="loading"> -->
+    <div id="result"></div>
+    <input type="button" class="btn" onclick="reset()" value="Reset">
+    </div>
+
+    <!-- SCRIPT TAGS -->
+  <script src="cipherScript.js" type="text/Javascript"></script>
+</body>
+
 </html>
