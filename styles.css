@@ -10,7 +10,7 @@
 body {
   display: flex;
   justify-content: center;
-  background: url(./images/Top-secret-background\ -\ Copy.jpg);
+  background: url(./images/Top-secret-background\ -\ Copy.jpg) darkgray;
   background-position: bottom;
   background-size: cover;
   background-repeat: none;
